@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.body1{
+    background-image: url(../imgs/wallpaperflare.com_wallpaper\ \(5\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    background-color: rgb(20, 39, 145);
+    height: 80px;
+    
+}
+.header-container{
+    width: 80%;
+    margin: auto;
+    
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.header-link ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+   
+}
+.cartin{
+    margin-right: 200px;
+}
+.header-link a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    margin-right: 40px;
+}
+.header-link1{
+    margin-right: 30px;
+}
+
+.header-link  ul#userinfo {
+    display: none;
+    
+}
+#userdata{
+    margin-left: 30px;
+}
+ .header-link ul#userinfo li i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -20px;
+     margin-left: 100px; 
+}
+#logout{
+    font-weight: bold;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 150px;
+}
+.header-link ul#userinfo li .quantity {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(180, 180, 180);
+    color:rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    top:18px;
+    right:210px;
+    font-size: 13px;
+    display: none;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+.login-form{
+    width: 40%;
+    background-color:rgba(255, 255, 255, 0.425) ;
+    box-shadow: 1px 1px 8px 1px gray;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 20px;
+}
+.login-form h2{
+    color: rgb(20, 39, 145);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.login-form  form input {
+    display: block;
+    width:100%;
+    margin: 5px 0;
+    height: 40px;
+    border:none;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+}
+.login-form form  input[type="submit"] {
+    font-size: 23px;
+    color: white;
+    background-color: rgb(20, 39, 145) ;
+    padding: 0;
+}
+.login-form form  input[type="submit"]:hover {
+    background-color: rgb(26, 50, 186) ;
+}
+/* ------------------------------------------------------ */
+.carts-products {
+    position: absolute;
+    width:210px;
+    background-color: #eaeaea;
+    margin-top: 20px;
+    padding: 10px;
+    z-index: 1;
+    border: 1px solid  rgb(20, 39, 145);
+    display: none;
+}
+.carts-products a {
+   display: block;
+   color: #000;
+   margin: 4px 0;
+   padding: 0;
+   border-radius: 10px;
+   background-color:  rgb(20, 39, 145);
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+}
+
+/* --------------------------------------------------------------------- */
+
+.home{
+    margin: 5% 5%;
+}
+.product-img{
+    height: 350px;
+}
+.products{
+    display: grid;
+    width:90% ;
+    grid-template-columns: 26% 26% 26% 26% ;
+    position: absolute;
+    grid-row-gap: 20px;  
+   
+}
+
+
+@media (max-width:768px){
+    .body1{
+        background-image: url(../imgs/wallpaperflare.com_wallpaper\ \(8\).jpg);
+    }
+    .login-form{
+        width: 70%;
+     
+    }
+    .products{
+    display: grid;
+    grid-template-columns: 35% 35% 35%   ;
+    
+}
+
+}
+@media (max-width:567px) {
+    .body1{
+        background-image: url(../imgs/wallpaperflare.com_wallpaper\ \(7\).jpg);
+    }
+    .header-container{
+        width: 90%;
+        margin: auto;
+        
+    }
+    header{
+        background-color: rgb(20, 39, 145);
+        height: 60px;
+        
+    }
+    .header-title{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: -10px;
+    }
+    .header-link a{
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .login-form{
+        width: 90%;
+     
+    }
+    #logout{
+        margin-left: 130px;
+    }
+    #userdata{
+        margin-left: 60px;
+    }
+    .home{
+        margin-left: 10%;
+    }
+    .header-link ul#userinfo li .quantity {
+        right: 90px;
+        top: 10px;
+    }
+        .products{
+            display: grid;
+            grid-template-columns: 13%  ;
+            
+        }
+    
+}
